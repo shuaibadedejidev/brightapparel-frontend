@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/* Global font application */
+* {
+  font-family: "Inter", "Cabin", sans-serif;
+}
+
+@theme {
+  --color-main-bg: #FAFAF8;
+  --color-bg-card: #FFFFFF;
+  --color-bg-subtle: #F0EDE6;
+  --color-text-primary: #171717;
+  --color-text-muted: #1A1A1A;
+  --color-border-color: #E5E5E5;
+  --color-accent-main: #171717;
+  --color-accent-text: #FFFFFF;
+  --color-accent: #ff6b00;
+  /* Terracotta badge */
+}
+
+.signup, .login { 
+  background: #EF3B36;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFFFFF, #EF3B36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.label {
+  @apply text-sm font-medium text-gray-600 mb-2
+}
+
+.form-control {
+  @apply flex flex-col gap-1
+}
+
+.icon {
+  @apply w-5 h-5 top-2 left-1 -translate-1 text-gray-400
+}
+
+.input {
+  @apply border-b border-accent text-black pl-8 py-1 border-b-2 w-full focus:outline-0 
+}
